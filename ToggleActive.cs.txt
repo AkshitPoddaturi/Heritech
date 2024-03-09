@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ToggleActive : MonoBehaviour
+{
+    private bool value = true;
+    private void Start()
+    {
+        gameObject.SetActive(value);
+    }
+
+    public void Toggle()
+    {
+        value = !value;
+        gameObject.SetActive(value);
+    }
+}
